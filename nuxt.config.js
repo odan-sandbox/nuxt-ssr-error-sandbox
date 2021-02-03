@@ -1,4 +1,5 @@
-export default {
+/** @type {import('@nuxt/types').NuxtConfig} */
+const config = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-ssr-error-sandbox',
@@ -17,7 +18,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/user'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -40,3 +41,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
+
+export default config
